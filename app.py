@@ -315,35 +315,35 @@ if hasattr(model, "feature_importances_"):
         cliponaxis=False
     )
 
-fig.update_layout(
-    template="plotly_white",
-    paper_bgcolor="#F4F7FC",
-    plot_bgcolor="#F4F7FC",
-    font=dict(
-        family="Arial",
-        color="#12304A",
-        size=14
-    ),
-    title=dict(
-        text="Which Factors Influence Solar Power?",
-        font=dict(color="#12304A", size=22)
-    ),
-    xaxis=dict(
-        title="Relative Importance",
-        title_font=dict(color="#12304A", size=14),
-        tickfont=dict(color="#526579", size=12),
-        showgrid=True,
-        gridcolor="#DCE4EE"
-    ),
-    yaxis=dict(
-        title="Environmental Parameter",
-        title_font=dict(color="#12304A", size=14),
-        tickfont=dict(color="#12304A", size=13)
-    ),
-    coloraxis_showscale=False,
-    margin=dict(l=20, r=60, t=70, b=30),
-    height=350
-)
+    fig.update_layout(
+        template="plotly_white",
+        paper_bgcolor="#F4F7FC",
+        plot_bgcolor="#F4F7FC",
+        font=dict(
+            family="Arial",
+            color="#12304A",
+            size=14
+        ),
+        title=dict(
+            text="Which Factors Influence Solar Power?",
+            font=dict(color="#12304A", size=22)
+        ),
+        xaxis=dict(
+            title="Relative Importance",
+            title_font=dict(color="#12304A", size=14),
+            tickfont=dict(color="#526579", size=12),
+            showgrid=True,
+            gridcolor="#DCE4EE"
+        ),
+        yaxis=dict(
+            title="Environmental Parameter",
+            title_font=dict(color="#12304A", size=14),
+            tickfont=dict(color="#12304A", size=13)
+        ),
+        coloraxis_showscale=False,
+        margin=dict(l=20, r=60, t=70, b=30),
+        height=350
+    )
 
     fig.update_xaxes(showgrid=True, gridcolor="#DCE4EE")
     fig.update_yaxes(title="", categoryorder="total ascending")
